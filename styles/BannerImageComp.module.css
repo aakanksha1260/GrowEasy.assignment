@@ -1,0 +1,71 @@
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send image to back */
+  }
+  
+  .bannerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1; /* Bring content to front */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .banner h2 {
+    margin: 10px 0;
+    font-size: 48px; /* Larger font size for full screen */
+    font-weight: bold;
+  }
+  
+  .banner p {
+    margin: 10px 0;
+    font-size: 24px; /* Larger font size for full screen */
+  }
+  
+  .banner button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px; /* Larger font size for full screen */
+  }
+  
+  .banner button:hover {
+    background-color: #e68900;
+  }
+  
+  .editIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1; /* Bring edit icon to front */
+  }
+  
